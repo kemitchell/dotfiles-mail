@@ -9,7 +9,7 @@ remoterepository = Remote
 
 [Repository Local]
 type = Maildir
-localfolders = ~/mail/maildir
+localfolders = ~/.mail/maildir
 status_backend = sqlite
 nametrans = lambda folder: { 'INBOX': 'INBOX' }.get(folder, 'INBOX.' + folder)
 

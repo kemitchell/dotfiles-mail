@@ -7,9 +7,9 @@ set ispell = "aspell -e -c"
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 
-set folder = "~/mail/maildir/"
-set	record = "~/mail/maildir/Sent Items"
-set postponed = "~/mail/maildir/Drafts"
+set folder = "~/.mail/maildir/"
+set	record = "~/.mail/maildir/Sent Items"
+set postponed = "~/.mail/maildir/Drafts"
 set spoolfile = "+INBOX"
 
 set realname = "Kyle E. Mitchell"
