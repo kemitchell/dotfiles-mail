@@ -40,8 +40,8 @@ set signature = "~/.signature"
 set sig_on_top = yes
 set fast_reply = yes
 
-macro index,pager e  "<save-message>=Archive<enter>"
-macro index,pager R  "<save-message>=Receipts<enter>"
+macro index,pager y  "<clear-flag>N<enter><save-message>=Archive<enter>"
+macro index,pager R  "<clear-flag>N<enter><save-message>=Receipts<enter>"
 macro pager \cb "urlview"
 macro index \cy "<shell-escape>offlineimap -f INBOX<enter>"
 macro index,pager I "<change-folder>=INBOX<enter>"
