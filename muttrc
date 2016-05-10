@@ -57,7 +57,7 @@ set send_charset = "utf-8"
 set forward_format = "Fwd: %s"
 
 # Don't wait for messages to send
-set sendmail_wait=-1
+# set sendmail_wait=-1
 
 macro compose \e5 "F pandoc -s -f markdown -t html \ny^T^Utext/html; charset=us-ascii\n"
 set wait_key=no
