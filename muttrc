@@ -43,7 +43,7 @@ set fast_reply = yes
 macro index,pager y  "<save-message>=Archive<enter>"
 macro index,pager R  "<clear-flag>N<enter><save-message>=Receipts<enter>"
 macro pager \cb "urlview"
-macro index \cy "<shell-escape>mail-synchronize<enter>"
+macro index \cr "<shell-escape>mail-synchronize<enter>"
 macro index,pager I "<change-folder>=INBOX<enter>"
 
 set timeout=10
@@ -62,7 +62,7 @@ set forward_format = "Fwd: %s"
 macro compose \e5 "F pandoc -s -f markdown -t html \ny^T^Utext/html; charset=us-ascii\n"
 set wait_key=no
 
-set text_flowed=yes
+set text_flowed=no
 
 set askcc=yes
 set askbcc=yes
