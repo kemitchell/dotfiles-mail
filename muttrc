@@ -44,7 +44,7 @@ set fast_reply = yes
 macro index,pager y  "<save-message>=Archive<enter>"
 macro index,pager R  "<clear-flag>N<enter><save-message>=Receipts<enter>"
 macro pager \cb "urlview"
-macro index \cr "<shell-escape>mail-synchronize<enter>"
+macro index \cr "<shell-escape>mailsynchronize<enter>"
 macro index,pager I "<change-folder>=INBOX<enter>"
 
 set timeout=10
