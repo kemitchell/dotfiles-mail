@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 mkdir -p "$HOME/.mail"
-sudo apt-get install -y mutt offlineimap msmtp maildir-utils
+sudo apt-get install -y neomutt offlineimap msmtp maildir-utils
