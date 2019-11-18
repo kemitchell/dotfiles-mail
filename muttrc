@@ -1,5 +1,5 @@
 set mbox_type = Maildir
-set sendmail = /usr/bin/msmtp
+set sendmail = /home/kyle/.local/bin/msmtp
 
 set editor = "vim -c 'call WriteMail()' -c start"
 set ispell = "aspell -e -c"
