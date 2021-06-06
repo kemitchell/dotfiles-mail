@@ -23,5 +23,5 @@ ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 maxconnections = 5
 realdelete = no
-remotepasseval = subprocess.check_output(["pass", "show", "kylemitchell@fastmail.fm"]).strip()
+remotepasseval = subprocess.check_output(["pass", "show", "e-mail/kylemitchell@fastmail.fm"]).strip()
 nametrans = lambda folder: { 'INBOX': 'INBOX' }.get(folder, re.sub('^INBOX\.', '', folder))
