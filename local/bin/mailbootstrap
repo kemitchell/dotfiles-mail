@@ -1,4 +1,11 @@
 #!/bin/bash
 set -e
 mkdir -p "$HOME/.mail"
-sudo apt-get install -y neomutt offlineimap msmtp maildir-utils
+if command -v apt >/dev/null; then
+  sudo apt-get install -y neomutt offlineimap msmtp maildir-utils
+elif command -v pacman >/dev/null; then
+  sudo pacman -S --noconfirm neomutt offlineimap msmtp
+else
+  echo "Could not find apt or pacman."
+  exit 1
+fi
